@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | Austin Garland — Charleston Real Estate Insights</title>
-    <meta name="description" content="Local real estate insights from Austin Garland — market updates, neighborhood guides, and buying tips for Isle of Palms, Mount Pleasant, and Awendaw, SC.">
+    <meta name="description" content="Local real estate insights from Austin Garland — market updates, neighborhood guides, and buying tips for Isle of Palms, Sullivan's Island, and Mount Pleasant, SC.">
     <meta name="author" content="Austin Garland, The Cassina Group">
 
     <meta property="og:title" content="Charleston Real Estate Blog | Austin Garland">
-    <meta property="og:description" content="Market updates, neighborhood guides, and buying tips for Isle of Palms, Mount Pleasant, and Awendaw from a local expert.">
+    <meta property="og:description" content="Market updates, neighborhood guides, and buying tips for Isle of Palms, Sullivan's Island, and Mount Pleasant from a local expert.">
     <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -275,15 +275,15 @@
                 </div>
             </a>
 
-            <!-- POST 3: Awendaw -->
-            <a href="awendaw-charleston-hidden-gem-real-estate.html" class="blog-card fade-in">
+            <!-- POST 3: Sullivan's Island -->
+            <a href="sullivans-island-guide-buying-home.html" class="blog-card fade-in">
                 <div class="blog-card-body">
                     <div class="blog-card-meta">
-                        <span class="blog-card-category">Awendaw</span>
+                        <span class="blog-card-category">Sullivan's Island</span>
                         <span class="blog-card-date">March 2026</span>
                     </div>
-                    <h2 class="blog-card-title">Why Awendaw Is Charleston's Best-Kept Secret for Homebuyers</h2>
-                    <p class="blog-card-excerpt">More land, lower prices, and direct access to the Francis Marion National Forest — here's why savvy Charleston buyers are looking north of Mount Pleasant for their next home.</p>
+                    <h2 class="blog-card-title">The Insider's Guide to Buying on Sullivan's Island, SC</h2>
+                    <p class="blog-card-excerpt">Ultra-premium barrier island living with no short-term rentals, strict design review, and a $4M+ median price — here's what makes Sullivan's Island unlike any other market in Charleston.</p>
                     <span class="blog-card-read">
                         Read Guide
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
@@ -304,7 +304,7 @@
         <div class="footer-brand">Austin Garland | The Cassina Group, LLC</div>
         <p>
             309 Coleman Boulevard · Mount Pleasant, SC 29464 · 843.754.8428<br>
-            Specializing in Isle of Palms, Mount Pleasant &amp; Awendaw Real Estate
+            Specializing in Isle of Palms, Sullivan's Island &amp; Mount Pleasant Real Estate
         </p>
         <div class="footer-links">
             <a href="../#about">About</a>
@@ -320,6 +320,22 @@
             entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+<script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    if (navToggle && navLinks) {
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("mobile-open");
+            navToggle.classList.toggle("active");
+        });
+        navLinks.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("mobile-open");
+                navToggle.classList.remove("active");
+            });
+        });
+    }
     </script>
 </body>
 </html>
