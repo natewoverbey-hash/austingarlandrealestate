@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living in I'On Mount Pleasant: A New Urbanist Paradise | Austin Garland</title>
+    <meta name="description" content="Discover I'On Mount Pleasant, SC's premier new urbanist neighborhood. Walkable streets, custom homes, preserved natural beauty, and The I'On Club amenities.">
+    <meta name="author" content="Austin Garland">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>:root {
+    --color-cream: #F5F0EB;
+    --color-sand: #E8E0D5;
+    --color-warm-gray: #9B9088;
+    --color-driftwood: #7A6E64;
+    --color-deep-earth: #3D3530;
+    --color-ink: #1A1614;
+    --color-ocean: #4A6B7A;
+    --color-gold: #B8956A;
+    --color-gold-light: #D4B896;
+    --color-white: #FDFCFA;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+    font-family: var(--font-body);
+    color: var(--color-deep-earth);
+    background-color: var(--color-cream);
+    line-height: 1.7;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; }
+
+nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    background: rgba(253, 252, 250, 0.92);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(184, 149, 106, 0.15);
+    transition: all 0.4s ease;
+}
+nav.scrolled { box-shadow: 0 4px 30px rgba(26, 22, 20, 0.06); }
+.nav-inner { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+.nav-brand { font-family: var(--font-display); font-size: 1.4rem; font-weight: 600; color: var(--color-ink); letter-spacing: 0.02em; }
+.nav-brand span { color: var(--color-gold); font-weight: 400; }
+.nav-links { display: flex; list-style: none; gap: 2.5rem; align-items: center; }
+.nav-links a { font-size: 0.82rem; font-weight: 500; color: var(--color-driftwood); text-transform: uppercase; letter-spacing: 0.12em; transition: color 0.3s ease; }
+.nav-links a:hover { color: var(--color-ink); }
+.nav-cta { background: var(--color-deep-earth) !important; color: var(--color-cream) !important; padding: 0.6rem 1.4rem; border-radius: 2px; }
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+.nav-toggle span { display: block; width: 24px; height: 2px; background: var(--color-ink); margin: 5px 0; transition: 0.3s; }
+
+.article-header {
+    padding: 10rem 2rem 3rem;
+    background: linear-gradient(165deg, var(--color-cream) 0%, var(--color-sand) 50%, #DDD5C8 100%);
+    position: relative;
+}
+.article-header::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-gold-light), transparent);
+}
+.article-header-inner { max-width: 760px; margin: 0 auto; }
+.article-header .meta-line { font-size: 0.78rem; color: var(--color-warm-gray); margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem; }
+.article-header h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 400; line-height: 1.2; color: var(--color-ink); }
+.blog-card-category { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-ocean); background: rgba(74, 107, 122, 0.08); padding: 0.25rem 0.7rem; border-radius: 2px; }
+
+.article-body { max-width: 760px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+.article-body p { margin-bottom: 1.5rem; font-size: 1.05rem; color: var(--color-deep-earth); line-height: 1.8; }
+.article-body h2 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 500; color: var(--color-ink); margin: 2.5rem 0 1rem; }
+.article-body h3 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 500; color: var(--color-ink); margin: 2rem 0 0.8rem; }
+.article-body ul, .article-body ol { margin: 0 0 1.5rem 1.5rem; color: var(--color-deep-earth); }
+.article-body li { margin-bottom: 0.5rem; font-size: 1.02rem; }
+.article-body blockquote {
+    border-left: 3px solid var(--color-gold);
+    padding: 1rem 1.5rem; margin: 1.5rem 0;
+    font-family: var(--font-display); font-size: 1.15rem; font-style: italic;
+    color: var(--color-driftwood); background: var(--color-cream);
+    border-radius: 0 4px 4px 0;
+}
+.article-body a { color: var(--color-ocean); text-decoration: underline; }
+
+footer { background: var(--color-ink); color: rgba(245, 240, 235, 0.5); padding: 3rem 2rem; text-align: center; }
+.footer-brand { font-family: var(--font-display); font-size: 1.2rem; font-weight: 500; color: var(--color-cream); margin-bottom: 0.5rem; }
+footer p { font-size: 0.82rem; line-height: 1.8; }
+.footer-links { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap; }
+.footer-links a { font-size: 0.78rem; color: rgba(245, 240, 235, 0.4); text-transform: uppercase; letter-spacing: 0.1em; transition: color 0.3s ease; }
+.footer-links a:hover { color: var(--color-gold-light); }
+
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .nav-links.mobile-open {
+        display: flex; flex-direction: column;
+        position: absolute; top: 100%; left: 0; right: 0;
+        background: var(--color-white); padding: 1.5rem 2rem; gap: 1.2rem;
+        border-bottom: 1px solid var(--color-sand);
+        box-shadow: 0 8px 24px rgba(26, 22, 20, 0.08);
+    }
+    .nav-toggle { display: block; }
+    .article-header { padding: 8rem 1.5rem 2.5rem; }
+    .article-body { padding: 2rem 1.5rem 4rem; }
+}</style>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Living in I'On Mount Pleasant: A New Urbanist Paradise",
+        "author": {
+            "@type": "RealEstateAgent",
+            "name": "Austin Garland"
+        },
+        "datePublished": "2026-05-06",
+        "publisher": {
+            "@type": "RealEstateAgent",
+            "name": "Austin Garland"
+        }
+    }
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-brand">Austin Garland <span>|</span> Realtor</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="../contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="article-header">
+        <div class="article-header-inner">
+            <div class="meta-line">
+                <span class="blog-card-category">Market Insights</span>
+                <span>May 6th 2026</span>
+            </div>
+            <h1>Living in I'On Mount Pleasant: A New Urbanist Paradise</h1>
+        </div>
+    </div>
+
+    <div class="article-body">
+        <p>As a residential realtor specializing in Mount Pleasant, I've had the privilege of showing countless properties throughout our beautiful area. But when clients ask me about truly special neighborhoods that offer something different, I'On consistently stands out as Mount Pleasant's new urbanist paradise.</p><p>I'On isn't just another subdivision – it's a thoughtfully planned community that puts lifestyle and connection at the forefront. From the moment you enter this walkable neighborhood, you'll notice the intentional design that encourages residents to step outside their front doors and engage with their surroundings and neighbors.</p><h2>What Makes I'On Mount Pleasant Special?</h2><p>The genius of I'On lies in its new urbanist approach to community development. The efficient lot sizes aren't about cramming houses together – they're designed to promote getting out of your house and letting neighborly relationships flourish. The mature landscaping, preserved natural elements, and protected wetlands create a setting that's nothing short of picturesque and wonderful.</p><p>One of the features I love most about I'On is the mixed-use component at the neighborhood's entrance. You'll find restaurants, a dentist office, interior design services, a hair salon, wealth management, and even a package store – all within walking distance of your front door. This isn't just convenient; it creates a genuine sense of place that's rare in modern developments.</p><p>The community was developed with careful attention to preserving Mount Pleasant's natural beauty. Protected parks, marshlands, and wetlands are woven throughout the neighborhood, providing residents with community gathering spaces that foster connection while maintaining the area's environmental integrity.</p><h2>Who Should Consider Living in I'On?</h2><p>I'On appeals to buyers who value community connection and appreciate thoughtful design. The neighborhood attracts those who want to experience a more traditional sense of community.</p><p>The efficient lot sizes and walkable design particularly appeal to those who prefer spending time in community spaces rather than maintaining large private yards. If you're someone who values knowing your neighbors and enjoys the idea of walking to dinner or your hair appointment, I'On might be exactly what you're looking for.</p><h2>Housing Options in I'On Mount Pleasant</h2><p>You'll find a variety of architectural styles that complement the new urbanist design principles, from charming cottages to larger single-family residences. The homes are designed with front porches and pedestrian-friendly features that encourage interaction with the streetscape and community.</p><h2>Location and Lifestyle Benefits</h2><p>Beyond the community itself, I'On offers the convenience of Mount Pleasant's prime location. Residents enjoy easy access to our beautiful beaches, downtown Charleston's historic charm, and quality healthcare facilities. This combination of small-town community feel with big-city access is hard to find.</p><p>The I'On Club adds another layer of lifestyle amenities that I think sets this community apart. Members have access to a full gym, swimming facilities, pickleball and tennis courts, plus personal training, group fitness classes, and kids' programs. The club even offers dining options, making it a true community hub.</p><p>As Austin Garland, a leading realtor in Mount Pleasant and property East of The Cooper River, I've seen how the community's walkable design and preserved natural spaces create a daily lifestyle that feels more like a vacation than a commute to everyday errands.</p><h2>The I'On Experience</h2><p>What I find most compelling about I'On is how successfully it creates genuine community in our modern world. The combination of walkable streets, preserved natural beauty, mixed-use convenience, and thoughtful amenities like The I'On Club creates an environment where neighbors actually know each other.</p><p>The community parks and gathering spaces aren't just decorative – they're actively used by residents who've embraced the new urbanist lifestyle that I'On was designed to foster.</p><p><strong>About the Author:</strong> Austin Garland is a leading realtor specializing in Mount Pleasant, Isle of Palms, and Sullivans Island single-family homes. He works with both buyers and sellers throughout Mount Pleasant's diverse neighborhoods, with particular expertise in the area's unique communities and lifestyle offerings.</p><p>Considering a move to I'On or curious about other Mount Pleasant neighborhoods? I'm always happy to share insights about what makes each community special and help you find the right fit for your lifestyle.</p>
+    </div>
+
+    <footer>
+        <div class="footer-brand">Austin Garland | The Cassina Group</div>
+        <p>Equal Housing Opportunity</p>
+        <p style="margin-top:4px;font-style:italic;font-size:0.8rem;">Content on this site is created with AI assistance and reviewed by Austin Garland.</p>
+        <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="index.html">Blog</a>
+            <a href="../contact.html">Contact</a>
+            <a href="https://withnotable.ai">Powered by withNotable</a>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll-triggered fade-in
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Nav scroll state
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Hamburger menu
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('mobile-open');
+                navToggle.classList.toggle('active');
+            });
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('mobile-open');
+                    navToggle.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
